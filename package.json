@@ -1,6 +1,5 @@
 {
   "name": "project",
-
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -9,6 +8,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.74.1",
     "vite": "^5.2.0"
   }
 }
