@@ -1,9 +1,5 @@
 
 @import './mixins';
 @import './base';
-// @import './globals';
+@import './globals';
 
-body{
-    background-color: var(--neutral-100);
-    color: #fff;    
-}
