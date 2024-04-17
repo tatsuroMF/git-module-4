@@ -1,5 +1,6 @@
 
-/*------*/@mixin align-item-flex() {
+
+@mixin align-item-flex() {
     display: flex;
     align-items: center;
   }

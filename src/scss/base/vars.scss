@@ -1,14 +1,31 @@
 :root{
-    --neutral-10:#FFFFFF;
+    --neutral-10:#FFF;
     --neutral-20:#F5F5F5;
     --neutral-30:#EDEDED;
     --neutral-60:#18181D;
     --neutral-100:#1D1E25;
+    --neutral-120:#828282;
+    --neutral-130: #d9d9d9;
+    //logo color
+    --logo-color-text:#101010;
+    --logo-color-circle: #101010;
+    //primary
+    --primary-50:#4E7DDB;
 
+    //transtion
+    --transition: all .3s;
 
+    //z-index
+    --z-index-1:1;
+    --z-index-2:2;
+    --z-index-3:3;
+    --z-index-4:4;
+    
 
+    
     //container
     --container-padding: 15px;
     --container-width: 1200px;
 
 }
+

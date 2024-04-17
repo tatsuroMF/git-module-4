@@ -1,5 +1,15 @@
+@import "./mixins";
+@import "./base";
+@import "./globals";
 
-@import './mixins';
-@import './base';
-@import './globals';
+//components
+@import "./components/header.scss";
 
+[data-theme="dark"] {
+  background-color: var(--neutral-60);
+  --neutral-10:#18181D;
+  --neutral-100: #d9d9d9;
+  --neutral-140: #fff;   
+  --logo-color-text:#fff;
+  --logo-color-circle:#343542;
+}
