@@ -1,0 +1,243 @@
+.hero {
+}
+.hero-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  gap: 97px;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: var(--z-index--1);
+
+    width: 551px;
+    height: 551px;
+    border-radius: 50%;
+
+    opacity: 0.2;
+    background: #fa7515;
+    filter: blur(220px);
+  }
+  @include mini-desktop {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.hero-tittle {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--neutral-100);
+  margin-bottom: 114px;
+  
+  @include small-tablet {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @include mini-desktop {
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 45px;
+  }
+  @include mobile-small {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  
+
+}
+.hero-btn {
+  @include button(var(--neutral-100));
+}
+.hero-input {
+  min-width: 260px;
+  padding: 0 0 23px;
+  border-bottom: 1px solid var(--neutral-40);
+  background-color: transparent;
+}
+.hero-form {
+  display: flex;
+  gap: 16px;
+  margin-top: 69px;
+  @include mini-desktop{
+    justify-content: center;
+    margin-top: 40px;
+  }
+  @include mobile{
+    flex-direction: column;
+  }
+
+  
+}
+.hero-left {
+  max-width: 599px;
+}
+/*-------------------------*/
+.hero-right {
+  margin-top: 65px;
+  position: relative;
+  @include mobile{
+    margin-top: 0;
+  }
+}
+.hero-graphs {
+}
+.hero__main-graph {
+  max-width: 419px;
+  border-radius: var(--border-radius);
+  padding: 20px 26px;
+
+  box-shadow: 20px 40px 80px 0 #5960871f;
+  background: #fff;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    border-radius: 100%;
+    background: var(--primary-60);
+    filter: blur(180px);
+    width: 525px;
+    height: 525px;
+    z-index: var(--z-index--1);
+  }
+  @include small-desktop {
+    & img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+.hero__mini-graph {
+  position: absolute;
+  top: -66px;
+  right: -128px;
+
+  min-width: 213px;
+  padding: 16px 18px;
+  border-radius: var(--border-radius);
+
+  box-shadow: 20px 40px 80px 0 rgba(45, 51, 81, 0.12);
+  background: #fff;
+  & img {
+    width: 100%;
+  }
+  @include small-desktop {
+    top: -78px;
+    right: -127px;
+    & img {
+      max-width: 150px;
+    }
+  }
+  @include mobile {
+       position: static;
+       @include flex-column-center;
+       margin-top: 10px;
+  }
+
+}
+
+.hero__main-p {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #1d1e25;
+}
+
+.hero-statistic {
+  display: flex;
+  justify-content: space-between;
+  max-width: 419px;
+
+  margin-top: 29px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+
+  box-shadow: 20px 40px 80px 0 rgba(45, 51, 81, 0.12);
+  color: var(--neutral-10);
+  background: #000;
+
+  @include mobile-small{
+    padding: 10px;
+    .hero__col-score{
+      font-size: 16px;
+    }
+    .hero-col{
+      text-align: center   ;
+    }
+  }
+
+}
+.hero-col {
+  display: flex;
+  flex-direction: column;
+}
+.hero__col-sales {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+
+  color: #5c616f;
+}
+.hero__col-score {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  margin: 4px 0 8px 0;
+  color: #fff;
+}
+.hero__col-stat {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  letter-spacing: -0.04em;
+  color: #5c616e;
+ 
+  color: #5c616e;
+  @include mobile-small{
+    flex-direction: column;
+    align-items: baseline;
+    display: flex;
+  }
+
+}
+.hero__col-stat span {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #60d39c;
+  margin-right: 8px;
+}
+.hero__col-stat.color-red span {
+  display: inline-block;
+  color: #e35454;
+}
+.hero-subtittle{
+  @include small-tablet{
+    font-size: 26px;
+    text-align: center;
+    &::before{
+      content: none;
+    }
+  }
+  @include mobile{
+
+    font-size: 20px;
+  
+  }
+  @include mobile-small{
+    font-size: 16px;
+  
+  }
+
+}

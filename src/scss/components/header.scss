@@ -18,15 +18,19 @@
     height: 100dvh;
     width: 60dvw;
     min-width: 30dvw;
-    transition: left var(--transition) , opacity var(--transition) ,visibility var(--transition);
+   
+    transition: all .4s;
     opacity: 0;
     visibility: hidden;
+
+    // transition: left var(--transition) , opacity var(--transition) ,visibility var(--transition);
   }
   &--visible{
     left: 0vw;
     opacity: 1;
     visibility: visible;
   }
+  
 }
 
 .nav-list {
@@ -137,13 +141,7 @@
   z-index: var(--z-index-2);
   @include burger;
 }
-.header-nav {
-  @include small-tablet {
-    
-    flex-direction: column;
-    
-  }
-}
+
 .overlay {
   @include small-tablet {
     position: fixed;
@@ -158,5 +156,34 @@
     opacity: 1;
     visibility: visible;
   }
+}
+
+.header{
+  height: 200px;
+  visibility: hidden; 
+  z-index: var(--z-index-3);
+
+  @include small-tablet{
+    height: auto;
+    margin-bottom: 50px;
+  } 
+  .header-sticky{
+    position: sticky;
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--transition);
+    z-index: var(--z-index-3);
+
+    @include small-tablet{
+      position: static;
+    } 
+  }
+  
+}
+.header-sticky.header-sticky.header--fade{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0);
 }
 

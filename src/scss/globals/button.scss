@@ -1,0 +1,16 @@
+@mixin button($bc-color) {
+  border-radius: 100px;
+  padding: 16px 32px;
+  background-color: $bc-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-10);
+  transition: var(--transition);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

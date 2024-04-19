@@ -1,49 +1,67 @@
 .heading {
-    &-h1 {
-      font-size: 72px;
-    }
-  
-    &-h2 {
-      font-size: 56px;
-    }
-  
-    &-h3 {
-      font-size: 40px;
-    }
-  
-    &-h4 {
-      font-size: 36px;
-    }
-  
-    &-h5 {
+  &-h1 {
+    font-size: 72px;
+  }
+
+  &-h2 {
+    font-size: 56px;
+  }
+
+  &-h3 {
+    font-size: 40px;
+  }
+
+  &-h4 {
+    font-size: 36px;
+  }
+
+  &-h5 {
+    font-size: 32px;
+  }
+
+  &-h1,
+  &-h2,
+  &-h3,
+  &-h4,
+  &-h5 {
+    line-height: 120%;
+  }
+}
+
+.text {
+  &-p {
+    &-subtittle {
+      @include align-item-flex;
+      gap: 27px;
+
+      font-weight: 600;
       font-size: 32px;
+      line-height: 131%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-100);
+      &::before {
+        content: "";
+        display: inline-block;
+        background-color: var(--neutral-100);
+        width: 76px;
+        height: 1px;
+        transform: translateY(-19px);
+      }
     }
-  
-    &-h1,
-    &-h2,
-    &-h3,
-    &-h4,
-    &-h5 {
-      line-height: 120%;
+    &-large {
+      font-size: 24px;
     }
-  }
-  
-  .text {
-    &-p {
-      &-large {
-        font-size: 24px;
-      }
-  
-      &-medium {
-        font-size: 18px;
-      }
-  
-      &-default {
-        font-size: 16px;
-      }
-  
-      &-small {
-        font-size: 14px;
-      }
+
+    &-medium {
+      font-size: 18px;
+    }
+
+    &-default {
+      font-size: 16px;
+    }
+
+    &-small {
+      font-size: 14px;
     }
   }
+}

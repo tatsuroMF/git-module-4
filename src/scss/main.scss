@@ -2,8 +2,11 @@
 @import "./base";
 @import "./globals";
 
+
 //components
 @import "./components/header.scss";
+@import "./components/home/hero.scss"; 
+@import "./components/home/overwiev.scss"; 
 
 [data-theme="dark"] {
   background-color: var(--neutral-60);
@@ -12,4 +15,5 @@
   --neutral-140: #fff;   
   --logo-color-text:#fff;
   --logo-color-circle:#343542;
+  --primary-60:#e2f8f033;
 }

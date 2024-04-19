@@ -19,4 +19,18 @@ export const UseburgerMenu = () => {
   });
 
   overlay.addEventListener("click", closeBurgerMenu);
+
+
+  window.addEventListener("scroll", function() {
+    const scrolled = window.scrollY;
+    const element = document.querySelector(".header-sticky"); // Замените "yourElementId" на ID вашего элемента
+  
+    if (scrolled > 250) {
+        element.classList.add("header--fade"); // Замените "yourClassName" на название класса, который нужно добавить
+    } else {
+        element.classList.remove("header--fade");
+    }
+  });
 };
+
+
