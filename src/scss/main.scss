@@ -7,6 +7,9 @@
 @import "./components/header.scss";
 @import "./components/home/hero.scss"; 
 @import "./components/home/overwiev.scss"; 
+@import "./components/home/passion.scss"; 
+@import "./components/home/strength.scss"; 
+@import "./components/home/companies.scss"; 
 
 [data-theme="dark"] {
   background-color: var(--neutral-60);

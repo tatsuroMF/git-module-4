@@ -1,0 +1,55 @@
+.companies {
+}
+.companies-inner {
+  @include align-item-flex;
+  gap: 30px;
+  @include small-tablet {
+    flex-direction: column;
+    .companies-texts{
+        text-align: center;
+    }
+    
+  }
+  @include mobile-small{
+    .companies-item {
+        width: 120px;
+        height: 60px;
+    }
+  }
+}
+.companies-texts {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  color: var(--neutral-150);
+  max-width: 323px;
+}
+.companies-tittle {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--neutral-100);
+  margin-bottom: 16px;
+}
+.companies-p {
+}
+.companies-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include small-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.companies-item {
+  @include flex-center;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 160px;
+  height: 90px;
+}
