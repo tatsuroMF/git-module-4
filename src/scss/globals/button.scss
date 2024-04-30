@@ -14,3 +14,22 @@
     opacity: 0.9;
   }
 }
+%price-button {
+  @include flex-center;
+  border: 1px solid var(--neutral-160);
+  border-radius: 100px;
+  padding: 16px;
+  width: 160px;
+  height: 56px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-100);
+  transition:  var(--transition);
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
