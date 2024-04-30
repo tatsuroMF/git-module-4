@@ -1,12 +1,9 @@
-import "../scss/pricing.scss";
+import "../scss/contact.scss";
 
 //components
-
+import { useNewsSliderSecond } from "./components/home/swiper";
 import { useTheme } from "./components/theme";
-import { Usepricing } from "./components/pricing/plans";
-
 import { UseburgerMenu } from "./components/burger-menu";
 UseburgerMenu();
-
-Usepricing();
+useNewsSliderSecond()
 useTheme();
