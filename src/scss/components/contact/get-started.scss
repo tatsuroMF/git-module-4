@@ -1,0 +1,138 @@
+.getStarted {
+  padding: 120px 0 160px 0;
+}
+.getStarted-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  max-width: 1440px;
+  @include small-tablet {
+    justify-content: center;
+  }
+}
+.getStarted-img {
+  display: inline-block;
+  @include small-tablet {
+    display: none;
+  }
+}
+.getStarted-body {
+  position: absolute;
+  left: 6%;
+  z-index: var(--z-index-3);
+  background: #fff;
+  border: 1px solid #ced1d8;
+  padding: 56px 48px;
+  max-width: 608px;
+
+  @include tablet {
+    left: var(--container-padding);
+  }
+  @include small-tablet {
+    position: static;
+  }
+  @include mobile {
+    padding: 30px 24px;
+  }
+}
+.getStarted__form-tittle {
+  font-weight: 600;
+  line-height: 122%;
+  letter-spacing: -0.02em;
+  color: #1d1e25;
+  margin-bottom: 20px;
+  @include mobile-small {
+    text-align: center;
+  }
+}
+.getStarted__form-head {
+  margin-bottom: 48px;
+}
+.getStarted__form-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: var(--neutral-150);
+  a {
+    font-weight: 500;
+    color: var(--primary-70);
+  }
+  @include mobile-small {
+    text-align: center;
+  }
+}
+.getStarted-top {
+  @include flex-between;
+  gap: 32px;
+  margin-bottom: 24px;
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+}
+.getStarted__form-label {
+  font-weight: 500;
+  line-height: 143%;
+  color: #1d1e25;
+  margin-bottom: 6px;
+}
+.getStarted__input {
+  border: 1px solid var(--neutral-30);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.getStarted__form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  span {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #1d1e25;
+  }
+}
+.getStarted__input-email {
+  border: 1px solid var(--neutral-30);
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  height: 44px;
+}
+.getStarted__form-input-textarea {
+  border: 1px solid var(--neutral-30);
+  border-radius: 8px;
+  padding: 10px 14px;
+  max-width: 512px;
+  outline: none;
+  resize: none;
+  height: 134px;
+  @include mobile {
+    height: 80px;
+  }
+}
+.getStarted__form-button {
+  border-radius: 100px;
+  padding: 16px 32px;
+
+  background: #1d1e25;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+
+  margin-top: 8px;
+
+  @include mobile-small {
+    width: 100%;
+  }
+}
+.error {
+  margin-top: 5px;
+  border-color: red;
+}
