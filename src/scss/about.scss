@@ -5,8 +5,8 @@
 
 //components
 @import "./components/header.scss";
-@import "./components/pricing/hero.scss";
-@import "./components/pricing/faq.scss";
+@import "./components/about/beliews.scss";
+@import "./components/about/creators.scss";
 @import "./components/footer.scss"; 
 
 [data-theme="dark"] {
@@ -19,6 +19,22 @@
     --logo-color-circle:#343542;
     --primary-60:#e2f8f033;
     --progress-bar:#ffffff57;
-    
+    --primary-80:#d9d9d9;
+    --neutral-180:#fff;
+     .creators-button{
+      & svg {
+        path {
+          fill: #fff;
+        }
+      }
+      &:hover {
+        background:  #fff;
+        & svg {
+          path {
+            fill: #1d1e25;
+          }
+        }
+      }
+     }
   }
   
