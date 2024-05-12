@@ -19,8 +19,10 @@ export default defineConfig({
         pricing:'./src/pricing.html',
         contact:'./src/contact.html',
         about:'./src/about.html',
-      }
-    }
+        perform:'./src/perform.html',
+        updates:'./src/updates.html',
+      },
+    },
   },
   plugins: [
     ViteMinifyPlugin(),
