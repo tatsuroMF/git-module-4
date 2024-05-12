@@ -1,0 +1,130 @@
+.quality-inner {
+}
+.quality-tittle {
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: var(--neutral-100);
+
+  padding-bottom: 53px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 292px;
+    z-index: var(--z-index--1);
+
+    width: 551px;
+    height: 551px;
+    border-radius: 50%;
+
+    opacity: 0.2;
+    background: #fa7515;
+    filter: blur(220px);
+  }
+}
+.quality-subtittle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  color: var(--neutral-100);
+
+  max-width: 750px;
+
+  & span {
+    content: "";
+    display: inline-block;
+    background-color: var(--neutral-100);
+    min-width: 76px;
+    height: 1px;
+    transform: translateY(-40px);
+    margin-right: 24px;
+  }
+}
+.quality__body {
+  margin: 128px 0 160px 0;
+}
+.quality__tabs-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-bottom: 80px;
+}
+.quality__tabs-button {
+  padding: 10px 14px;
+}
+.quality__button {
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--neutral-150);
+}
+.quality__button.quality__button--active {
+  color: var(--neutral-100);
+  font-weight: 600;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.quality-tabs {
+}
+.quality-tab {
+  display: none;
+  transition: var(--transition);
+}
+.quality-tab.quality-tab--active {
+  display: block;
+  transition: var(--transition);
+}
+
+.quality-tabs {
+}
+.quality-tab {
+}
+.quality__swiper {
+}
+.quality__swiper-wrapper {
+}
+.swiper-wrapper {
+}
+.quality__swiper-slide {
+}
+.swiper-slide {
+}
+.quality__slide-data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--neutral-150);
+  padding: 16px 0 24px 0;
+}
+.quality__slide-tittle {
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: var(--neutral-100);
+  padding-bottom: 16px;
+}
+.quality__slide-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--neutral-150);
+  max-width: 332px;
+}
+.text--large{
+  max-width: 500px;
+}
+.quality__slide-data-head {
+}
+.quality__slide-data {
+}
+.text-p-small {
+}
+.quality__slide-data-author {
+}

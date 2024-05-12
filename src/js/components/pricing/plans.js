@@ -29,9 +29,6 @@ export const Usepricing = () => {
     popularPrice.textContent = Math.floor((priceList.popular.default / dayInMonth) + priceList.popular.added);
     enterPrice.textContent = Math.floor((priceList.enterPrice.default / dayInMonth) + priceList.enterPrice.added);
   };
-
-
- 
   switcher.addEventListener("click", () => {
     if(switcher.checked){
         setPricesAdded() 
