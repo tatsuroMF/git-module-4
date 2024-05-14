@@ -36,6 +36,10 @@ export const useNewsSliderSecond = () => {
 export const useNewSliderThird = () => {
   new Swiper(".reviews-slider", {
     slidesPerView: "auto",
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     navigation: {
       nextEl: ".reviews__button-next",
       prevEl: ".reviews__button-prev",

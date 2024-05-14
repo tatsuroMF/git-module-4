@@ -6,7 +6,7 @@
 }
 
 .header-nav {
-  gap: 100px;
+  gap: 60px;
   @include flex-center;
   @include small-tablet {
     flex-direction: column;

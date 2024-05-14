@@ -6,6 +6,8 @@
 //components
 @import "./components/header.scss";
 @import "./components/updates/quality.scss";
+@import "./components/updates/prompt.scss";
+@import "./components/updates/articles.scss";
 @import "./components/footer.scss"; 
 
 [data-theme="dark"] {

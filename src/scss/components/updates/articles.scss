@@ -1,0 +1,126 @@
+.articles {
+  padding: 186px 0 160px;
+}
+.articles-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 80px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.articles-tittle{
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--neutral-100);
+}
+.articles__buttons-box {
+  display: flex;
+  gap: 16px;
+}
+
+.articles-subtittle {
+  font-weight: 500;
+  line-height: 178%;
+  color: var(--neutral-150);
+
+  max-width: 435px;
+  margin-top: 24px;
+}
+.articles-button {
+  @include flex-center;
+  border: 1px solid var(--neutral-100);
+  border-radius: 100px;
+
+  width: 50px;
+  height: 50px;
+  background-color: var(--neutral-100);
+  transition: var(--transition);
+  & svg path {
+    fill: var(--neutral-10);
+  }
+  & svg {
+    width: 16px;
+    height: 16px;
+  }
+  &:hover {
+    transition: var(--transition);
+    border: 1px solid var(--neutral-160);
+    background: transparent;
+    & svg path {
+      fill: var(--neutral-100);
+    }
+  }
+}
+.articles-button.swiper-button-disabled {
+  transition: var(--transition);
+  border: 1px solid var(--neutral-160);
+  background: transparent;
+  & svg path {
+    fill: var(--neutral-100);
+  }
+}
+.articles-wrapper {
+  min-height: 960px;
+}
+.articles__slide-texts {
+  @include mobile-small {
+    text-align: center;
+  }
+}
+.articles__slide-tittle {
+  font-weight: 600;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  color: var(--neutral-100);
+  padding: 24px 0 16px;
+
+  @include tablet {
+    font-size: 24px;
+    padding: 16px 0 12px;
+  }
+  @include mobile {
+    font-size: 20px;
+    padding: 12px 0 8px;
+  }
+}
+.articles__slide-text {
+  font-weight: 500;
+  line-height: 178%;
+  color: var(--neutral-150);
+
+  margin-bottom: 24px;
+  @include tablet {
+    line-height: 158%;
+  }
+  @include mobile {
+    font-size: 16px;
+    line-height: 148%;
+  }
+}
+.articles__slide-btn {
+  @include flex-center;
+  border: 1px solid var(--neutral-160);
+  border-radius: 100px;
+  max-width: 175px;
+  height: 56px;
+
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--neutral-100);
+  @include mobile-small {
+    max-width: none;
+    width: 100%;
+  }
+}
